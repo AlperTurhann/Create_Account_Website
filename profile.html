@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/pageIcon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Profile page." />
     <meta name="keywords" content="HTML, CSS, Tailwind CSS, Vite" />
@@ -10,20 +11,93 @@
   </head>
   <body>
     <main class="w-screen h-screen flex flex-col justify-center items-center">
-      <section class="w-3/4 h-3/4 shadow-xl">
+      <section class="w-3/4 h-3/4 shadow-xl overflow-hidden">
         <div class="h-2/3 mx-5 flex flex-col items-center border-b-2">
           <img
-            src="images/pp.jpg"
+            src="images/profilePicture.jpg"
             alt="Profile Photo"
             class="rounded-image absolute w-20 h-20 -mt-10 md:w-24 md:h-24 md:-mt-12 lg:w-28 lg:h-28 lg:-mt-14"
           />
           <div
-            class="w-full flex justify-center font-semibold text-sm md:text-base lg:text-lg gap-x-5 md:gap-x-8 lg:gap-x-11 pt-10 md:pt-12 lg:pt-14 mt-2"
+            class="w-full h-1/3 flex justify-center items-center text-center font-semibold text-sm md:text-base lg:text-lg pt-10 md:pt-12 lg:pt-14 mt-2"
           >
-            <p id="name"></p>
-            <p id="surname"></p>
-            <p id="mail"></p>
+            <p id="name" class="w-1/3"></p>
+            <p id="surname" class="w-1/3"></p>
+            <p id="mail" class="w-1/3"></p>
           </div>
+          <div
+            class="w-full h-full flex flex-col items-center justify-center text-center text-gray-600 text-sm md:text-base lg:text-lg"
+          >
+            <p
+              id="nameSurname"
+              class="w-full font-bold flex justify-center text-black"
+            ></p>
+            <div class="w-full flex flex-row items-center justify-center">
+              <img
+                src="images/location.svg"
+                alt="Location Icon"
+                class="flex w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 justify-center"
+              />
+              <p id="location" class="ml-2 uppercase"></p>
+            </div>
+            <div
+              class="w-full flex flex-row items-center justify-center mt-6 md:mt-8 lg:mt-10"
+            >
+              <img
+                src="images/job.svg"
+                alt="Job Icon"
+                class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              />
+              <p id="job" class="ml-2"></p>
+            </div>
+            <div class="w-full flex flex-row items-center justify-center">
+              <img
+                src="images/education.svg"
+                alt="Education Icon"
+                class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              />
+              <p id="education" class="ml-2"></p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-1/3 text-center text-xs md:text-sm lg:text-base mt-5 pb-5"
+        >
+          <p
+            id="description"
+            class="h-4/5 text-gray-600 px-10 break-all overflow-hidden"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            reiciendis dolor, sunt possimus expedita iste temporibus qui
+            molestias facilis necessitatibus nemo repudiandae molestiae ex
+            deserunt illo. Inventore itaque voluptas repellendus reiciendis
+            deserunt exercitationem doloremque repudiandae voluptate nostrum
+            saepe quibusdam dicta porro, quos veniam consequuntur minus ipsum
+            cumque. Ipsum, nam aut obcaecati quasi eius fuga dolorem temporibus
+            est quaerat, sed soluta quis recusandae, aspernatur magni ut
+            distinctio sint quidem ipsam vero et! Ipsum explicabo quibusdam
+            doloremque nisi veritatis, esse quasi quod tempore laudantium
+            voluptatem, at quidem iste illo officia reprehenderit doloribus modi
+            mollitia voluptatibus porro! Cumque adipisci quidem voluptate fuga
+            at inventore suscipit reiciendis nihil expedita nemo aliquid, esse
+            quaerat explicabo unde, recusandae quibusdam culpa ab ad?
+            Exercitationem placeat tenetur iusto repellendus ut qui ab doloribus
+            distinctio, quas labore soluta quaerat obcaecati nam non modi at?
+            Consequatur nemo nulla autem ad velit, doloribus facilis sequi!
+            Praesentium iste corrupti esse voluptatem ipsum quis, fugit natus
+            ipsam, delectus deleniti repudiandae optio doloribus iure quia
+            quaerat dolorum perferendis illum tenetur repellendus! Mollitia
+            fugiat rem rerum, corporis in quis quas quia sint necessitatibus
+            fugit. Et ea impedit nobis laudantium ipsam omnis iusto, nihil
+            accusamus maiores incidunt illo quod quibusdam molestiae est
+            necessitatibus inventore assumenda error?
+          </p>
+          <button
+            id="buttonShowMore"
+            class="w-full h-1/5 text-sky-600 hover:text-sky-700"
+          >
+            Show More
+          </button>
         </div>
       </section>
     </main>
