@@ -19,5 +19,5 @@ function submitForm(event) {
 /*
   var url = "profile.html?name=" + encodeURIComponent(name) + "&mail=" + encodeURIComponent(mail) + "&location=" + encodeURIComponent(location) + "&education=" + encodeURIComponent(education) + "&job=" + encodeURIComponent(job) + "&description=" + encodeURIComponent(description);
 */
-  window.location.href = "profile.html";
+  window.location.href = "Create_Account_Website/profile.html";
 }

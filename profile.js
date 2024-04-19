@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("surname").innerHTML = surname;
         document.getElementById("mail").innerHTML = mail;
     } else {
-        window.location.href = "index.html";
+        window.location.href = "Create_Account_Website/index.html";
     }
 
     /*
