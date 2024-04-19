@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profile page." />
+    <meta name="keywords" content="HTML, CSS, Tailwind CSS, Vite" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <main class="w-screen h-screen flex flex-col justify-center items-center">
+      <section class="w-3/4 h-3/4 shadow-xl">
+        <div class="h-2/3 mx-5 flex flex-col items-center border-b-2">
+          <img
+            src="images/pp.jpg"
+            alt="Profile Photo"
+            class="rounded-image absolute w-20 h-20 -mt-10 md:w-24 md:h-24 md:-mt-12 lg:w-28 lg:h-28 lg:-mt-14"
+          />
+          <div
+            class="w-full flex justify-center font-semibold text-sm md:text-base lg:text-lg gap-x-5 md:gap-x-8 lg:gap-x-11 pt-10 md:pt-12 lg:pt-14 mt-2"
+          >
+            <p id="name"></p>
+            <p id="surname"></p>
+            <p id="mail"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="h-5 flex items-center">
+      <div
+        class="w-1/2 h-full transform skew-y-12 bg-sky-600 border-2 border-sky-600"
+      ></div>
+      <div
+        class="w-1/2 h-full transform -skew-y-12 bg-sky-600 border-2 border-sky-600"
+      ></div>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>
