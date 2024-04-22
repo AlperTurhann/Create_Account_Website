@@ -1,5 +1,15 @@
 import { defineConfig } from "vite";
+import { resolve } from 'path';
 
 export default defineConfig({
-    base: "/Create_Account_Website",
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, "index.html"),
+                profile: resolve(__dirname, "profile.html")
+            }
+        },
+        outDir: './dist'
+    },
+    base: "/Create_Account_Website"
 });
