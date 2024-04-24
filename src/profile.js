@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
 function showMoreAndLess() {
     if (buttonShowMore.innerHTML == "Show More") {
         buttonShowMore.innerHTML = "Show Less";
-        description.classList.add("overflow-auto");
+        description.classList.add("overflow-scroll");
         description.classList.remove("overflow-hidden");
     } else {
         buttonShowMore.innerHTML = "Show More";
-        description.classList.remove("overflow-auto");
+        description.classList.remove("overflow-scroll");
         description.classList.add("overflow-hidden");
     }
 }
